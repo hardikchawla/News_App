@@ -9,8 +9,6 @@ The idea is to keep this app super simple which helps the user to use this app e
 
 ## Screenshots
 
-![Screenshot_1614858015](https://user-images.githubusercontent.com/43115488/109969024-69589700-7d19-11eb-8f0c-75bdfb94458b.png)
-
-
-![Screenshot_1614857991](https://user-images.githubusercontent.com/43115488/109969048-707fa500-7d19-11eb-8499-e5622dafa550.png)
+<img src = "https://user-images.githubusercontent.com/43115488/109969024-69589700-7d19-11eb-8f0c-75bdfb94458b.png" width="250" >
+<img src = "https://user-images.githubusercontent.com/43115488/109969048-707fa500-7d19-11eb-8499-e5622dafa550.png" width="250" >
 
