@@ -28,8 +28,8 @@ class MainActivity : AppCompatActivity(), NewsItemClicked {
 
     private fun fetchData() {
 
-        val url = "https://saurav.tech/NewsAPI/top-headlines/category/health/in.json"
-        val jsonObjectRequest = JsonObjectRequest(
+        val url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=4a8c73bb03b84a04850081a526cfc0a5"
+        val jsonObjectRequest = object: JsonObjectRequest(
             Request.Method.GET, url,
             null,
             Response.Listener {
@@ -50,9 +50,17 @@ class MainActivity : AppCompatActivity(), NewsItemClicked {
             },
             Response.ErrorListener {
             }
-        )
+        ) {
+            override fun getHeaders(): MutableMap<String, String> {
+                val headers = HashMap<String, String>()
+                headers["User-Agent"] = "Mozilla/5.0"
+                return headers
+            }
+        }
 
-// Access the RequestQueue through your singleton class.
+
+
+
         MySingleton.getInstance(this).addToRequestQueue(jsonObjectRequest)
 
         }
